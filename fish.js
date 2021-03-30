@@ -336,11 +336,6 @@ FISH.prototype = {
 		this.controlStatus(context);
 	}
 };
-$(function(){
-<<<<<<< HEAD
-    RENDERER.init();
-});
-=======
+$(function () {
 	RENDERER.init();
 });
->>>>>>> 3a936dd2f1a08b54cbd4807c8f3a6288ba80a3f8
