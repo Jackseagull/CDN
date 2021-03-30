@@ -12,11 +12,7 @@ var RENDERER = {
 		this.bindEvent();
 		this.render();
 	},
-	setParameters : function(){
-		// this.$window = $(window);
-		// this.$container = $('#jsi-flying-fish-container');
-		// this.$canvas = $('<canvas />');
-		// this.context = this.$canvas.appendTo(this.$container).get(0).getContext('2d');
+	setParameters : function () {
 		this.$window = $(window);
 		this.$container = $("#jsi-flying-fish-container");
 		this.$canvas = $("<canvas />");
@@ -166,7 +162,7 @@ var RENDERER = {
 		this.context.closePath();
 		this.context.fill();
 		this.context.restore();
-	}
+	},
 };
 var SURFACE_POINT = function(renderer, x){
 	this.renderer = renderer;

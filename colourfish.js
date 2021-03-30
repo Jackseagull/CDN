@@ -35,7 +35,7 @@ var RENDERER = {
         this.bindEvent();
         this.render();
     },
-    setParameters: function () {
+    setParameters : function () {
         this.$window = $(window);
         this.$container = $("#jsi-flying-fish-container");
         this.$canvas = $("<canvas />");
