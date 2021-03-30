@@ -82,16 +82,16 @@ var RENDERER = {
         this.skyGradient = this.context.createLinearGradient(0, 0, 0, this.height);
         // this.skyGradient.addColorStop(0, "hsl(180, 80%, 70%)");
         // this.skyGradient.addColorStop(1, "hsl(180, 80%, 90%)");
-        this.skyGradient.addColorStop(0, "hsl(276, 0%, 70%)");
-        this.skyGradient.addColorStop(1, "hsl(276, 0%, 90%)");
+        this.skyGradient.addColorStop(0, "hsl(180, 80%, 70%)");
+        this.skyGradient.addColorStop(1, "hsl(180, 80%, 90%)");
 
         this.seaGradient = this.context.createLinearGradient(0, 0, 0, this.height);
         // this.seaGradient.addColorStop(0, "hsl(180, 80%, 60%)");
         // this.seaGradient.addColorStop(0.5, "hsl(180, 80%, 50%)");
         // this.seaGradient.addColorStop(1, "hsl(210, 80%, 50%)");
-        this.seaGradient.addColorStop(0, "hsl(276, 0%, 60%)");
-        this.seaGradient.addColorStop(0.5, "hsl(276, 0%, 50%)");
-        this.seaGradient.addColorStop(1, "hsl(228, 0%, 50%)");
+        this.seaGradient.addColorStop(0, "hsl(180, 80%, 60%)");
+        this.seaGradient.addColorStop(0.5, "hsl(180, 80%, 50%)");
+        this.seaGradient.addColorStop(1, "hsl(210, 80%, 50%)");
 
 
         this.fishes.push(new FISH(this));
