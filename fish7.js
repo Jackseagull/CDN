@@ -217,7 +217,7 @@ SURFACE_POINT.prototype = {
 			this.next.fy += this.force.next;
 		}
 		context.lineTo(this.x, this.renderer.height - this.height);
-	}
+	},
 };
 var FISH = function(renderer){
 	this.renderer = renderer;
