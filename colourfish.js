@@ -23,7 +23,7 @@ function fish() {
 }
 var RENDERER = {
     POINT_INTERVAL: 5,
-    FISH_COUNT: 4,
+    FISH_COUNT: 3,
     MAX_INTERVAL_COUNT: 50,
     INIT_HEIGHT_RATE: 0.5,
     THRESHOLD: 50,

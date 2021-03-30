@@ -13,10 +13,17 @@ var RENDERER = {
 		this.render();
 	},
 	setParameters : function(){
+		// this.$window = $(window);
+		// this.$container = $('#jsi-flying-fish-container');
+		// this.$canvas = $('<canvas />');
+		// this.context = this.$canvas.appendTo(this.$container).get(0).getContext('2d');
 		this.$window = $(window);
-		this.$container = $('#jsi-flying-fish-container');
-		this.$canvas = $('<canvas />');
-		this.context = this.$canvas.appendTo(this.$container).get(0).getContext('2d');
+		this.$container = $("#jsi-flying-fish-container");
+		this.$canvas = $("<canvas />");
+		this.context = this.$canvas
+			.appendTo(this.$container)
+			.get(0)
+			.getContext("2d");
 		this.points = [];
 		this.fishes = [];
 		this.watchIds = [];
@@ -81,10 +88,10 @@ var RENDERER = {
 		}
 	},
 	bindEvent : function(){
-		this.$window.on('resize', this.watchWindowSize);
-		this.$container.on('mouseenter', this.startEpicenter);
-		this.$container.on('mousemove', this.moveEpicenter);
-		this.$container.on('click', this.reverseVertical);
+		this.$window.on("resize", this.watchWindowSize);
+		this.$container.on("mouseenter", this.startEpicenter);
+		this.$container.on("mousemove", this.moveEpicenter);
+		this.$container.on("click", this.reverseVertical);
 	},
 	getAxis : function(event){
 		var offset = this.$container.offset();
@@ -142,13 +149,13 @@ var RENDERER = {
 		requestAnimationFrame(this.render);
 		this.controlStatus();
 		this.context.clearRect(0, 0, this.width, this.height);
-		this.context.fillStyle = 'hsl(0, 0%, 95%)';
+		this.context.fillStyle = "hsl(0, 0%, 95%)";
 		
 		for(var i = 0, count = this.fishes.length; i < count; i++){
 			this.fishes[i].render(this.context);
 		}
 		this.context.save();
-		this.context.globalCompositeOperation = 'xor';
+		this.context.globalCompositeOperation = "xor";
 		this.context.beginPath();
 		this.context.moveTo(0, this.reverse ? 0 : this.height);
 		
