@@ -334,7 +334,7 @@ FISH.prototype = {
 		context.restore();
 		context.restore();
 		this.controlStatus(context);
-	}
+	},
 };
 $(function () {
 	RENDERER.init();
